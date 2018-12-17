@@ -1,3 +1,4 @@
+#To review
 print "Input color: "
 color = gets.chomp.downcase
 def tr_lights(color)
