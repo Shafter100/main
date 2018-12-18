@@ -16,6 +16,11 @@ def guessNum(range)
       guessed = true
     elsif num != userNum && tries > 1
       print "Try again. "
+      if userNum > num
+        print "Guessed number is less then you think. "
+      else
+        print "Guessed number is more then you think. "
+      end
     end
 
     tries -= 1
