@@ -1,8 +1,18 @@
 arrNil = [nil,123,nil,"test", :foo, :bar]
 #print arrNil.compact
 #puts
-print arrNil - [nil]
+#print arrNil - [nil]
+#puts
+
+
+for i in (0...arrNil.size)
+  if arrNil[i] == nil
+    arrNil.delete_at(i)
+  end
+end
+print arrNil
 puts
+
 ######
 arrHash = [:foo, nil, :foo, "foo", 5, 'bar', :foo, 'banana', 'milk', 12, :foo, 'bar', 34, 5, 'banana', 'milk', nil, 12, 45, 'milk']
 #hashArr = {}
